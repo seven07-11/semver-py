@@ -33,8 +33,9 @@ class VersionError(ValueError):
     """Raised when a version string does not follow SemVer."""
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Version:
+    # `slots=True` requires Python 3.10+, so it is omitted to keep 3.9 support.
     major: int
     minor: int
     patch: int
