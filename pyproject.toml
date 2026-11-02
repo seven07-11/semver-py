@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semver-py"
+version = "0.1.0"
+description = "Parse, compare and increment semantic version numbers (SemVer 2.0.0) with the standard library only."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["semver", "version", "semantic-versioning"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+semver = "semver.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["semver*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
