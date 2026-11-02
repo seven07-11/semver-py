@@ -1,5 +1,7 @@
 # semver-py
 
+[![CI](https://github.com/seven07-11/semver-py/actions/workflows/ci.yml/badge.svg)](https://github.com/seven07-11/semver-py/actions/workflows/ci.yml)
+
 Parse, compare and increment [Semantic Versioning](https://semver.org) strings
 (`MAJOR.MINOR.PATCH[-PRERELEASE][+BUILD]`) using only the Python standard library —
 no dependencies, works on Python 3.9+.
